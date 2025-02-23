@@ -1,0 +1,96 @@
+
+body {
+  background-image: url('deer.jpg');
+ background-size: cover; /* Makes it cover the whole screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.dash-background {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.dash-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2em;
+  height: 80vh;
+  width: 70vw;
+  background-color: rgb(1, 66, 106);
+  padding: 2em;
+}
+
+.dash-left-section {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  background-color: rgb(1, 66, 106);
+}
+
+.dash-right-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1.4em 0.5em 0.5em 1.4em;
+  font-size: 1.8vw;
+  font-weight: 600;
+  border: rgba(252, 252, 252, 0.591) solid;
+  /* background-image: url(/6206160.jpg); */
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Centered Temperature & Sea Level */
+.Temperature, .SeaLevel {
+  color: rgb(255, 255, 255);
+  font-size: 1.8vw;
+  background-color: rgba(250, 209, 5, 0.806);
+  width: 60%;
+  text-align: center;
+  padding: 0.8em;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0.8em 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Temperature:hover, .SeaLevel:hover {
+  transform: scale(1.1);
+  border: white 2px solid;
+}
+
+/* Right-side Pressure, Depth & Salinity */
+.Pressure, .Depth, .Salinity {
+  color: rgb(255, 255, 255);
+  font-size: 1.5vw;
+  background-color: orange;
+  padding: 0.8em;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0.5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
