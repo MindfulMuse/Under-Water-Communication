@@ -4,22 +4,11 @@ const { exec } = require("child_process");
 const cors = require("cors");
 const SerialPort = require("serialport");
 const Readline = require("@serialport/parser-readline");
-const mongoose = require("mongoose");
+
 
 const app = express();
 app.use(cors());
 
-// MongoDB Connection
-mongoose.connect("mongodb://localhost:27017/sensorDB", { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.error("MongoDB Connection Error:", err));
-
-// Sensor Data Schema
-const SensorData = mongoose.model("SensorData", new mongoose.Schema({
-  temperature: Number,
-  pressure: Number,
-  timestamp: { type: Date, default: Date.now }
-}));
 
 // Serial Communication Setup
 const port = new SerialPort("COM3", { baudRate: 9600 }); // Change COM3 if needed
