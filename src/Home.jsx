@@ -113,17 +113,7 @@ const Home = () => {
         Status: {alert || "Safe"}
       </p>
 
-      <button className="open-modal-btn" onClick={fetchPastData}>
-        View Past Data
-      </button>
 
-      {/* Modal Component */}
-      <PastDataModal
-        isOpen={modalIsOpen}
-        onClose={() => setModalIsOpen(false)}
-        pastData={pastData}
-      />
-    </div>
   );
 };
 
