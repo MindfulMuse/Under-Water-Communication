@@ -5,7 +5,7 @@ This project involves an underwater monitoring system that collects **temperatur
 
 ## **Tech Stack**  
 - **Hardware:** Two Arduino boards (One underwater, One on the surface), Sensors (Temperature & Pressure)  
-- **Backend:** Node.js, Express, MongoDB  
+- **Backend:** Node.js, Express 
 - **Frontend:** React.js  
 - **Verilog:** Used for risk assessment  
 - **Serial Communication:** Used for Arduino to Arduino and PC data transfer  
@@ -14,7 +14,7 @@ This project involves an underwater monitoring system that collects **temperatur
 1. **Underwater Arduino:** Collects **temperature** and **pressure** data and transmits it wirelessly to the surface Arduino.  
 2. **Surface Arduino:** Receives data and forwards it to the backend.  
 3. **Backend (Node.js & Express):**  
-   - Reads sensor data and stores it in **MongoDB**.  
+   - Reads sensor data 
    - Fetches **salinity, sea level, and depth** from an API.  
    - Runs **Verilog code** for risk assessment.  
 4. **Verilog Module:** Reads the sensor data and classifies risk as **"Safe"** or **"Risky"**.  
